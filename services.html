@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nos Services | Garderie Le Petit Monde</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- ARRIÈRE-PLAN GLOBAL (IDENTIQUE AUX AUTRES PAGES) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fdfaf6;
+            background-image: linear-gradient(rgba(253, 250, 246, 0.92), rgba(253, 250, 246, 0.92)), url('logo.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+        }
+
+        /* --- TRANSPARENCE ET NAVIGATION --- */
+        header, main, .container, .card {
+            background: transparent !important;
+        }
+
+        header {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-logo img { height: 55px; }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 25px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: #e67e22; }
+
+        /* --- CONTENU --- */
+        .main-content {
+            padding-top: 50px;
+        }
+
+        h1 { color: #e67e22; text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
+        h2 { color: #3498db; margin-bottom: 15px; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.85) !important;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            backdrop-filter: blur(3px);
+            border-top: 6px solid #e67e22;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+
+        .program-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .program-item {
+            background: rgba(46, 204, 113, 0.2);
+            color: #27ae60;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.95);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <div class="nav-logo"><img src="logo.png" alt="Logo"></div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="propos.html">À Propos</a>
+        
+        <a href="services.html" style="color: #e67e22;">Services</a>
+        
+        <a href="programme.html">Programme</a>
+        <a href="securite.html">Sécurité et Bien-être</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+    <main class="container main-content" style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+        
+        <h1>Nos Services</h1>
+
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <h2>Service de garde à temps plein </h2>
+                <p>Nous offrons un service de garde complet du lundi au vendredi de 7h30 à 17h30.</p>
+                <p>Ce service est parfaitement adapté aux besoins des parents travailleurs.</p>
+            </div>
+
+            <div class="service-card" style="border-top-color: #2ecc71;">
+                <h2>Programme éducatif </h2>
+                <p>Notre programme est conçu pour stimuler le développement global de l'enfant:</p>
+                <div class="program-list">
+                    <span class="program-item">Cognitif</span>
+                    <span class="program-item">Social</span>
+                    <span class="program-item">Émotionnel</span>
+                    <span class="program-item">Physique</span>
+                </div>
+            </div>
+
+            <div class="service-card" style="border-top-color: #3498db;">
+                <h2>Environnement bilingue </h2>
+                <p>Les enfants évoluent dans un milieu francophone et anglophone.</p>
+                <p>Cela favorise leur ouverture d'esprit et renforce leurs compétences linguistiques dès le plus jeune âge.</p>
+            </div>
+
+            <div class="service-card" style="border-top-color: #9b59b6;">
+                <h2>Approche inclusive </h2>
+                <p>Nous accueillons tous les enfants, y compris ceux ayant des besoins particuliers.</p>
+                <p>Ils évoluent dans un environnement respectueux et parfaitement adapté à leur situation.</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>📍 Saint-Boniface, Winnipeg</p>
+        <p>&copy; 2026 Garderie Le Petit Monde. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

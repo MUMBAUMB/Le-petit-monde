@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À Propos | Garderie Le Petit Monde</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- ARRIÈRE-PLAN GLOBAL (IDENTIQUE AUX AUTRES PAGES) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fdfaf6;
+            background-image: linear-gradient(rgba(253, 250, 246, 0.92), rgba(253, 250, 246, 0.92)), url('logo.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+        }
+
+        header, main, .container, .card {
+            background: transparent !important;
+        }
+
+        header {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-logo img { height: 55px; }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { color: #e67e22; }
+
+        /* --- CONTENU --- */
+        .main-content {
+            padding-top: 50px;
+        }
+
+        h1 { color: #e67e22; text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
+        h2 { color: #3498db; border-bottom: 2px solid #e67e22; display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
+        h3 { color: #e67e22; margin-top: 0; }
+
+        .about-section {
+            background: rgba(255, 255, 255, 0.8) !important;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            backdrop-filter: blur(3px);
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* --- NOUVELLE SECTION ENGAGEMENT --- */
+        .engagement-box {
+            background: rgba(230, 126, 34, 0.1) !important;
+            border-left: 8px solid #e67e22;
+            padding: 30px;
+            border-radius: 0 20px 20px 0;
+            margin: 40px 0;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .highlight-box {
+            background: rgba(52, 152, 219, 0.1) !important;
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 6px solid #3498db;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        footer {
+            background: rgba(44, 62, 80, 0.95);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-logo"><img src="logo.png" alt="Logo"></div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="propos.html" style="color: #e67e22;">À Propos</a>
+            <a href="services.html">Services</a>
+            <a href="programme.html">Programme Éducatif</a>
+            <a href="securite.html">Sécurité et Bien-être</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container main-content" style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        
+        <h1>À Propos de Nous</h1>
+
+        <section class="about-section">
+            <h2>Qui sommes-nous ?</h2>
+            <p>La <strong>Garderie Le Petit Monde</strong> est une entreprise créée par un groupe de sept promoteurs engagés, animés par la volonté de répondre à un besoin croissant en services de garde à Winnipeg.</p>
+            <p>Notre objectif est d’offrir une solution fiable et accessible aux familles, en mettant l’accent sur la qualité éducative, la sécurité et l’inclusion.</p>
+
+            <div class="engagement-box">
+                <h3>Notre engagement envers les familles </h3>
+                <p>À Winnipeg, de nombreuses familles rencontrent des difficultés à trouver une place en garderie. La Garderie Le Petit Monde s’engage à offrir une solution accessible, fiable et de qualité pour répondre à ce besoin essentiel.</p>
+            </div>
+        </section>
+
+        <section class="mission-vision">
+            <div class="highlight-box">
+                <h3>Notre Mission </h3>
+                <p>Offrir un environnement sécuritaire, éducatif et inclusif qui favorise le développement global des enfants tout en soutenant les familles dans leur quotidien.</p>
+            </div>
+            <div class="highlight-box" style="border-left-color: #2ecc71;">
+                <h3 style="color: #2ecc71;">Notre Vision </h3>
+                <p>Devenir une garderie de référence à Winnipeg en matière de qualité éducative, d’inclusion et de bien-être des enfants.</p>
+            </div>
+        </section>
+
+        <section class="about-section" style="margin-top: 60px; border-left: none; border-top: 6px solid #2ecc71;">
+            <h2 style="color: #27ae60; border-bottom-color: #2ecc71;">Nos Valeurs</h2>
+            <div class="values-grid">
+                <div class="value-card">🛡️ Sécurité et bien-être</div>
+                <div class="value-card">🤝 Respect et inclusion</div>
+                <div class="value-card">🎮 Apprentissage par le jeu</div>
+                <div class="value-card">👨‍👩‍👧 Collaboration parents</div>
+                <div class="value-card">🎓 Excellence éducative</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>📍 Saint-Boniface, Winnipeg</p>
+        <p>&copy; 2026 Garderie Le Petit Monde. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
