@@ -74,56 +74,6 @@ footer { background: var(--dark-text); color: white; text-align: center; padding
 
 
 
-/* --- STYLE POUR PC (Par défaut) --- */
-
-#menu-toggle {
-    display: none; /* On cache toujours la checkbox */
-}
-
-.hamburger {
-    display: none; /* CACHÉ SUR PC : les traits n'apparaissent pas */
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--primary);
-}
-
-nav {
-    display: flex; /* AFFICHÉ SUR PC : le menu est horizontal */
-}
-
-/* --- STYLE POUR TÉLÉPHONE (Moins de 768px) --- */
-
-@media (max-width: 768px) {
-    
-    .hamburger {
-        display: block; /* APPARAÎT SUR TÉLÉPHONE : les traits deviennent visibles */
-    }
-
-    nav {
-        display: none; /* CACHÉ SUR TÉLÉPHONE : le menu disparaît pour laisser place aux traits */
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        z-index: 1000;
-    }
-
-    /* Quand on clique sur les traits, on affiche le menu verticalement */
-    #menu-toggle:checked ~ nav {
-        display: flex;
-    }
-
-    nav a {
-        margin: 10px 0;
-        margin-left: 0; /* On retire la marge de gauche du PC */
-    }
-}
-
 
 
 
