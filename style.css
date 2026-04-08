@@ -70,3 +70,38 @@ nav a:hover { color: var(--primary); }
 }
 
 footer { background: var(--dark-text); color: white; text-align: center; padding: 30px; }
+
+
+/* --- ADAPTATION MOBILE (Écrans de moins de 768px) --- */
+@media (max-width: 768px) {
+    
+    /* On empile les éléments du menu */
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* On force les grilles à passer de 2 colonnes à 1 seule */
+    .grid, .contact-grid, .team-grid, .mission-vision {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* On réduit la taille des titres pour qu'ils ne débordent pas */
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    /* On ajuste le logo en arrière-plan pour qu'il soit plus discret sur mobile */
+    body {
+        background-size: 90% !important;
+        background-position: center bottom;
+    }
+
+    /* On réduit les marges des cartes */
+    .card, .registration-card, .contact-card {
+        padding: 20px !important;
+        margin: 10px !important;
+    }
+}
