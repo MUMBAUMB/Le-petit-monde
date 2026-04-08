@@ -95,7 +95,7 @@ footer { background: var(--dark-text); color: white; text-align: center; padding
 
     /* On ajuste le logo en arrière-plan pour qu'il soit plus discret sur mobile */
     body {
-        background-size: 90% !important;
+        background-size: 50% !important;
         background-position: center bottom;
     }
 
