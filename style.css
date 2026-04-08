@@ -72,6 +72,49 @@ nav a:hover { color: var(--primary); }
 footer { background: var(--dark-text); color: white; text-align: center; padding: 30px; }
 
 
+
+/* Cache l'icône hamburger sur ordinateur */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+/* ==========================================
+   MISE À JOUR : ADAPTATION MOBILE
+   ========================================== */
+@media (max-width: 768px) {
+    
+    .hamburger {
+        display: block; /* Affiche les traits sur téléphone */
+    }
+
+    nav {
+        display: none; /* Cache le menu par défaut sur téléphone */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    /* LA MAGIE : Si on clique sur les traits, on affiche le menu */
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+}
+
+
+
 /* --- ADAPTATION MOBILE (Écrans de moins de 768px) --- */
 @media (max-width: 768px) {
     
